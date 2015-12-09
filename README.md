@@ -11,3 +11,11 @@ $ repo init -u https://github.com/rosterloh/android_manifest.git -b nanopi2
  * -c, --current-branch **fetch only current branch from server**
  * -f, --force-broken **continue sync even if a project fails to sync**
  * -d, --detach **detach projects back to manifest revision**
+
+## Building
+
+```
+$ source build/envsetup.sh
+$ lunch aosp_nanopi2-userdebug
+$ make -j8
+```
