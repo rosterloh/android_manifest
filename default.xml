@@ -13,7 +13,7 @@
            fetch="https://github.com/rosterloh"
            revision="refs/heads/nanopi2" />
 
-  <default revision="refs/tags/android-5.1.1_r33"
+  <default revision="refs/tags/android-5.1.1_r34"
            remote="aosp"
            sync-c="true"
            sync-j="4"
