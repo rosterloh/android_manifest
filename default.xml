@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
+  <remote  fetch="https://github.com/rosterloh" name="rosterloh" revision="refs/heads/dragonboard" />
   <default remote="caf" revision="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk-cw-fs" name="device/common" revision="59222307bea10506e1f4814bf6687fb4cdcddabe" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/arm64" revision="39249053f37b7f9633eb406af3dbedfea7bf8b3e" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/armv7-a-neon" revision="0e7af778b59c0ff590e21fcce8cfc9176dc0d13d" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/common" revision="11c092a6cbfcf6207f07a9a8e3398e747e7f5461" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/goldfish" revision="e4881ef18ef3adc7d76485d96029f9259bdc7150" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/mini-emulator-arm64" revision="4f30226980039087b0d14de2c4dd0a1f37b9fd95" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="f41c1e4e10574399c6798d286c22d03471217691" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/mini-emulator-mips" revision="3fdb24de40ca27da9a86f10f31314f2a13259db5" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/mips" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project name="device/generic/qemu" revision="3cfdec2bc1154ff39064dfe844c1eed9ab67cfa4" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/x86" revision="81ce753ec0014fe404c4eec3ac6d04504356a638" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/generic/x86_64" revision="138339be1da9b0f34befe3751b0bae874d7253db" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="device" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="device,fugu,pdk-fs" name="device/google/atv" revision="b02e693b9d4cdcd2cb49cb872e2074c14115de27" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead" revision="87e2a7610a00fd2fa73ad9cd26e8d0ed04127e5e" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead-kernel" revision="94d6144be4d3c5a716b978d5a1079859ac52bb90" upstream="LA.BR.1.2.7_rb1.22"/>
+  <!-- <project groups="pdk" name="device/generic/mini-emulator-arm64" revision="4f30226980039087b0d14de2c4dd0a1f37b9fd95" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="f41c1e4e10574399c6798d286c22d03471217691" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/mini-emulator-mips" revision="3fdb24de40ca27da9a86f10f31314f2a13259db5" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/mips" revision="bf07c7522e80eef53a58a49e5d05b8913d00d1a6" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project name="device/generic/qemu" revision="3cfdec2bc1154ff39064dfe844c1eed9ab67cfa4" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/x86" revision="81ce753ec0014fe404c4eec3ac6d04504356a638" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/generic/x86_64" revision="138339be1da9b0f34befe3751b0bae874d7253db" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="device" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="device,fugu,pdk-fs" name="device/google/atv" revision="b02e693b9d4cdcd2cb49cb872e2074c14115de27" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead" revision="87e2a7610a00fd2fa73ad9cd26e8d0ed04127e5e" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="device,hammerhead,pdk-fs" name="device/lge/hammerhead-kernel" revision="94d6144be4d3c5a716b978d5a1079859ac52bb90" upstream="LA.BR.1.2.7_rb1.22"/> -->
   <project name="device/qcom/common" revision="19f5b921c2a8645095af0f66bc60e2bd14903d33" upstream="LA.BR.1.2.7_rb1.22">
     <copyfile dest="build.sh" src="build.sh"/>
     <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
@@ -391,31 +392,31 @@
   <project groups="pdk" name="platform/pdk" path="pdk" revision="0dcdadce73a01463bb58118415fb2fe347419ff4" upstream="LA.BR.1.2.7_rb1.22"/>
   <project name="platform/platform_testing" path="platform_testing" revision="3ae92c23785e8694029647607b6a29efb9cb8353" upstream="LA.BR.1.2.7_rb1.22"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="b728a257b2a06f1d18b7349dc2e90bebd013bbd4" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="LA.BR.1.2.7_rb1.22"/>
+  <!-- <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="LA.BR.1.2.7_rb1.22"/> -->
   <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" revision="648ca1ae83fc794d8c8fab318ca5cd8b88b4c608" upstream="LA.BR.1.2.7_rb1.22"/>
   <project name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="d7638b6496f75e896badacddb40a9dd018553bfc" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="c66f0d207f430da9b45df9b3f1cc52af225d305c" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="ba8d2d6a9c96e1b17103c6bbf854cfce4b4803d3" upstream="LA.BR.1.2.7_rb1.22"/>
+  <!-- <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" revision="cf9f78f8cf41b16edf9f712598a42743d5cea4af" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="c66f0d207f430da9b45df9b3f1cc52af225d305c" upstream="LA.BR.1.2.7_rb1.22"/> -->
+  <!-- <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="ba8d2d6a9c96e1b17103c6bbf854cfce4b4803d3" upstream="LA.BR.1.2.7_rb1.22"/> -->
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="a0cb3720e4047bade36f8cfac84ea94715313a89" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" revision="63b209feac0b045f5fc68810fd2e65bf1ca51e2f" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="f61a459478cdc31e8aae22a182cdbf814ba08012" upstream="LA.BR.1.2.7_rb1.22"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="f691cae2f256d5f72388c0ce9113007a53ad333a" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="9ceb135814c47cad4858083228fd9615aaaa7c84" upstream="LA.BR.1.2.7_rb1.22"/>
+  <!-- <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="9ceb135814c47cad4858083228fd9615aaaa7c84" upstream="LA.BR.1.2.7_rb1.22"/> -->
   <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="3c6dc0e9c16b4ed1ff43aef82a4bbec739aadcff" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="4c9e4ed0aa74f16d1ce3e0958cd892a218462001" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk-cw-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="c7bbfa87de5e23219282ac642cbd02630bf3dcfe" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="8a640e8c271aebd5683710ff002281da43fb5efe" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="ed603f9b7893442321e50d96bf226c27da1c279a" upstream="LA.BR.1.2.7_rb1.22"/>
-  <project groups="darwin,pdk,pdk-cw-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0b1ee9ec23565fd52a6f20d996a16977d0fa7ead" upstream="LA.BR.1.2.7_rb1.22"/>
+  <!-- <project groups="darwin,pdk,pdk-cw-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0b1ee9ec23565fd52a6f20d996a16977d0fa7ead" upstream="LA.BR.1.2.7_rb1.22"/> -->
   <project groups="linux,pdk,pdk-cw-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="f63d822b31f41bc1be234ad64a7f09de9221444f" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="958a5ddd2f7eccaf025ada539fe5c0a5cf4fbeba" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="b90c7bfb4b6be17888242492eb04b96e47c5dc59" upstream="LA.BR.1.2.7_rb1.22"/>
