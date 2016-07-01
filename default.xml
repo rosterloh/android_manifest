@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
-  <remote  fetch="https://github.com/rosterloh" name="rosterloh" revision="refs/heads/dragonboard" />
-  <default remote="caf" revision="LA.BR.1.2.7_rb1.22"/>
+  <remote  fetch="https://github.com/rosterloh" name="rosterloh" revision="refs/heads/dragonboard"/>
+  <default remote="caf" revision="LA.BR.1.2.7_rb1.22" sync-c="true" sync-j="8"/>
   <project groups="pdk-cw-fs" name="device/common" revision="59222307bea10506e1f4814bf6687fb4cdcddabe" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/arm64" revision="39249053f37b7f9633eb406af3dbedfea7bf8b3e" upstream="LA.BR.1.2.7_rb1.22"/>
   <project groups="pdk" name="device/generic/armv7-a-neon" revision="0e7af778b59c0ff590e21fcce8cfc9176dc0d13d" upstream="LA.BR.1.2.7_rb1.22"/>
