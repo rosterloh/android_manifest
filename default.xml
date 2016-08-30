@@ -2,10 +2,14 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
-           sync-j="4" />
+           sync-c="true"
+           sync-j="8"
+           sync-f="true" />
 
   <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
