@@ -1,7 +1,8 @@
 # Android Manifest
 
 ```
-$ repo init -u https://github.com/rosterloh/android_manifest.git -b master
+$ repo init -u https://github.com/rosterloh/android_manifest.git -b rpi3
+$ cp .repo/manifests/local_manifest.xml .repo
 ```
 
 -g : default,-darwin,-device,-x86,-mips
