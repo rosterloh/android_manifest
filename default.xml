@@ -13,16 +13,16 @@
   <project path="hardware/rpi" name="hardware_rpi" revision="npv" remote="peyo"/>
   <project path="device/brcm/rpi3" name="device_brcm_rpi3" revision="nougat" remote="peyo"/>
 
-  <project path="kernel/odrc" name="kernel_odrc" revision="odrc2" remote="peyo"/>
-  <project path="hardware/amlogic" name="hardware_amlogic" revision="master" remote="peyo"/>
-  <project path="hardware/amlogic/gralloc" name="hardware_amlogic_gralloc" revision="odrc2" remote="peyo"/>
-  <project path="device/aml/odrc2" name="device_aml_odrc2" revision="npv" remote="peyo"/>
+  <!--<project path="kernel/odrc" name="kernel_odrc" revision="odrc2" remote="peyo"/>-->
+  <!--<project path="hardware/amlogic" name="hardware_amlogic" revision="master" remote="peyo"/>-->
+  <!--<project path="hardware/amlogic/gralloc" name="hardware_amlogic_gralloc" revision="odrc2" remote="peyo"/>-->
+  <!--<project path="device/aml/odrc2" name="device_aml_odrc2" revision="npv" remote="peyo"/>-->
 
   <remote name="hk" fetch="https://github.com/codewalkerster"/>
   <project path="kernel/hardware/arm/gpu" name="android_hardware_arm_gpu" revision="s905_5.1.1_master" remote="hk"/>
   <project path="kernel/hardware/wifi/realtek/drivers/8192cu" name="android_hardware_wifi_realtek_drivers_8192cu" revision="s905_5.1.1_master" remote="hk"/>
-  <project path="hardware/amlogic/mali" name="android_hardware_amlogic_mali" revision="s905_5.1.1_master" remote="hk"/>
-  <project path="hardware/amlogic/hwcomposer" name="android_hardware_amlogic_hwcomposer" revision="s905_5.1.1_master" remote="hk"/>
+  <!--<project path="hardware/amlogic/mali" name="android_hardware_amlogic_mali" revision="s905_5.1.1_master" remote="hk"/>-->
+  <!--<project path="hardware/amlogic/hwcomposer" name="android_hardware_amlogic_hwcomposer" revision="s905_5.1.1_master" remote="hk"/>-->
 
   <remove-project name="device/generic/mips" />
   <remove-project name="device/generic/mips64" />
@@ -37,13 +37,21 @@
   <remove-project name="device/generic/x86_64" />
   <remove-project name="device/google/accessory/arduino" />
   <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/google/contexthub" />
+  <remove-project name="device/google/dragon" />
   <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/htc/flounder" />
   <remove-project name="device/htc/flounder-kernel" />
   <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/intel/edison" />
+  <remove-project name="device/lge/bullhead" />
   <remove-project name="device/lge/bullhead-kernel" />
   <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/asus/fugu" />
   <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/moto/shamu" />
   <remove-project name="device/moto/shamu-kernel" />
+  <remove-project name="device/sample" />
   <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
@@ -55,4 +63,5 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/ninja/darwin-x86" />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
 </manifest>
