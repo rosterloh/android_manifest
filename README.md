@@ -1,7 +1,7 @@
 # Android Manifest
 
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.0.0_r6
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.0_r7
 $ cd .repo
 $ git clone https://github.com/rosterloh/android_manifest.git -b rpi3 local_manifests
 ```
