@@ -1,9 +1,7 @@
 # Android Manifest
 
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.0_r7
-$ cd .repo
-$ git clone https://github.com/rosterloh/android_manifest.git -b rpi3 local_manifests
+$ repo init -u https://github.com/rosterloh/android_manifest.git -b apq8096
 ```
 
 -g : default,-darwin,-device,-x86,-mips
@@ -18,6 +16,6 @@ $ git clone https://github.com/rosterloh/android_manifest.git -b rpi3 local_mani
 
 ```
 $ source build/envsetup.sh
-$ lunch rpi3-eng
+$ lunch
 $ make -j8
 ```
