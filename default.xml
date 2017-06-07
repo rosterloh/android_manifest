@@ -2,11 +2,20 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           revision="refs/tags/android-n-iot-preview-4"
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
+   <remote  name="github"
+            fetch="https://github.com" />
+
+   <remote  name="github-ssh"
+            fetch="ssh://git@github.com" />
+
   <default revision="refs/tags/android-n-iot-preview-4"
            remote="aosp"
-           sync-j="4" />
+           sync-j="4"
+           sync-c="true" />
 
   <!-- BEGIN open-source projects -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -552,5 +561,7 @@
   <project path="hardware/bsp/kernel/nxp/imx-v4.1" name="platform/hardware/bsp/kernel/nxp/imx-v4.1" groups="imx6ul,imx7d" />
   <project path="hardware/bsp/kernel/raspberrypi/pi-v4.4" name="platform/hardware/bsp/kernel/raspberrypi/pi-v4.4" groups="rpi" />
   <!-- END Android Things open-source projects -->
+
+  <include name="manifests/rosterloh.xml" />
 
 </manifest>
