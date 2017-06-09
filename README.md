@@ -41,7 +41,8 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/rosterloh/android_manifest -b things
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-n-iot-preview-4
+$ git clone https://github.com/rosterloh/android_manifest -b things .repo/local_manifests
 ```
 
 ### Downloading the source tree ###
