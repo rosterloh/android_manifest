@@ -41,7 +41,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.2_r17
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-7.1.1_r28
 $ cd .repo
 $ git clone https://github.com/rosterloh/android_manifest local_manifests -b imx6
 ```
