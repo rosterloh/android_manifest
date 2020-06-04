@@ -4,82 +4,51 @@
   <!-- Repositories -->
   <remote  name="github"
            fetch="https://github.com" />
-
   <remote  name="github-ssh"
            fetch="ssh://git@github.com" />
 
-   <remote name="linaro-android"
-           fetch="git://android.git.linaro.org/"
-           review="review.android.git.linaro.org" />
-
-   <remote name="linaro-other" fetch="git://git.linaro.org/" />
-   <remote name="freedesktop" fetch="git://anongit.freedesktop.org/" />
-   <remote name="x86" fetch="https://git.code.sf.net/p/android-x86" />
- <!--  <remote name="x86" fetch="git://gitscm.sf.net/gitroot/android-x86/" /> -->
- <!--  <remote name="x86" fetch="https://github.com/android-x86-mirror/" /> -->
-   <remote name="robertfoss" fetch="https://git.collabora.com/git/user/robertfoss/" />
-   <remote name="padovan" fetch="https://git.collabora.com/git/user/padovan/" />
-   <remote name="tomeu" fetch="https://git.collabora.com/git/user/tomeu/" />
-   <remote name="android-etnaviv" fetch="https://customer-git.collabora.com/git/zodiac/" />
-
-   <!-- Linaro Device Configs -->
-   <project path="kernel/linaro/hisilicon" name="linux" revision="android-hikey-linaro-4.1" remote="github/96boards" groups="default" />
-   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="marshmallow-dev" remote="github/96boards" groups="device,hikey" />
-   <project path="packages/apps/UsbSpeedSwitch" name="android_packages_apps_UsbSpeedSwitch" revision="master" remote="github/96boards" groups="device,hikey" />
-
-   <remove-project path="external/drm_gralloc" name="platform/external/drm_gralloc" />
-   <project path="external/gbm_gralloc" name="gbm_gralloc.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <remove-project path="external/mesa3d" name="platform/external/mesa3d" />
-   <project path="external/mesa3d" name="mesa.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <project path="external/libpciaccess" name="external_libpciaccess" remote="x86" revision="marshmallow-x86" />
-
-   <project path="device/linaro/generic" name="android-device-linaro-generic.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <remove-project path="external/libdrm" name="platform/external/libdrm" />
-   <project path="external/libdrm" name="drm.git" revision="android-etnaviv" remote="tomeu" groups="default" />
-
-   <remove-project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" />
-   <project path="external/drm_hwcomposer" name="drm_hwcomposer.git" revision="android-etnaviv" remote="tomeu" groups="default" />
-
-   <remove-project path="build" name="platform/build" />
-   <project path="build" name="android-build.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" >
-     <copyfile src="core/root.mk" dest="Makefile" />
-   </project>
-
-   <remove-project path="frameworks/base" name="platform/frameworks/base" />
-   <project path="frameworks/base" name="android-frameworks-base.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <remove-project path="system/bt" name="platform/system/bt" />
-   <project path="system/bt" name="android-system-bt.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <remove-project path="system/core" name="platform/system/core" />
-   <project path="system/core" name="android-system-core.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
-   <project path="external/kmscube" name="kmscube.git" revision="android-etnaviv" remote="tomeu" groups="default" />
-
-   <project path="external/apitrace" name="apitrace.git" remote="github/aleksander0m" groups="default" revision="aosp" />
-
-   <project path="external/linux-tools-perf" name="linux-tools-perf.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-   <remove-project path="external/elfutils" name="platform/external/elfutils" />
-   <project path="external/elfutils" name="elfutils.git" revision="android-etnaviv" remote="android-etnaviv" groups="default" />
-
- <!--
-   <remove-project path="system/core" name="platform/system/core" />
-   <project path="system/core" name="android-system-core.git" revision="tmp" remote="robertfoss" groups="default" />
-
-   <remove-project path="system/core" name="platform/system/core" />
-   <project path="system/core" name="platform/system/core" revision="refs/changes/98/256898/2" remote="aosp" groups="default" />
-
-   <remove-project path="external/mesa3d" name="platform/external/mesa3d" />
-   <project path="external/mesa3d" name="mesa" revision="android-m" remote="github/robherring" groups="default" />
-
-   <remove-project path="system/core" name="platform/system/core" />
-   <project path="system/core" name="android-system-core.git" revision="master" remote="padovan" groups="default" />
-   <project path="external/iio-sensors-hal" name="android-iio-sensors-hal" revision="master" remote="github/robherring" groups="default" />
-   <project path="external/mesa3d" name="mesa" revision="android-m" remote="github/robherring" groups="default" />
-   <project path="external/libpciaccess" name="platform/external/libpciaccess" remote="x86" revision="marshmallow-x86" />
- -->
+  <!-- Unneeded repositories -->
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/bonito-sepolicy" />
+  <remove-project name="device/google/crosshatch" />
+  <remove-project name="device/google/crosshatch-kernel" />
+  <remove-project name="device/google/crosshatch-sepolicy" />
+  <remove-project name="device/google/cuttlefish" />
+  <remove-project name="device/google/cuttlefish_common" />
+  <remove-project name="device/google/cuttlefish_kernel" />
+  <remove-project name="device/google/cuttlefish_vmm" />
+  <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="device/google/muskie" />
+  <remove-project name="device/google/taimen" />
+  <remove-project name="device/google/wahoo" />
+  <remove-project name="device/google/wahoo-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/linaro/poplar" />
+  <remove-project name="device/linaro/poplar-kernel" />
+  <remove-project name="device/ti/beagle-x15" />
+  <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
 </manifest>
