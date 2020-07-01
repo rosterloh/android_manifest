@@ -40,7 +40,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-android-10 -m imx-android-10.0.0_2.1.0.xml
+$ repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-android-10 -m imx-android-10.0.0_2.3.0.xml
 $ cd .repo
 $ git clone https://github.com/rosterloh/android_manifest local_manifests -b thor96
 ```
